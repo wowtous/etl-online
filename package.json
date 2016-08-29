@@ -1,0 +1,36 @@
+{
+  "name": "etl-online",
+  "version": "1.0.0",
+  "description": "A web project writed with nodejs which offers etl service online",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wowtous/etl-online.git"
+  },
+  "keywords": [
+    "etl",
+    "online",
+    "web"
+  ],
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "ejs": "^2.5.1",
+    "express": "^4.13.3",
+    "moment": "^2.10.6",
+    "morgan": "^1.6.1",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
+  },
+  "bugs": {
+    "url": "https://github.com/wowtous/etl-online/issues"
+  },
+  "homepage": "https://github.com/wowtous/etl-online#README.md",
+  "author": "Darebeat",
+  "license": "MIT"
+}
