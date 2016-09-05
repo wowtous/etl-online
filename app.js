@@ -10,11 +10,25 @@ var bodyParser = require('body-parser');
 var app = express();
 
 var index = require('./routes/index');
+var server = require('./routes/server');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.enable('trust proxy');
+
+// var multer  = require('multer');
+// multer file object
+// app.use(multer({
+//     storage: multer.diskStorage({
+//         destination: function (req, file, cb) {
+//             cb(null, __dirname+'/public/uploads');
+//         },
+//         filename: function (req, file, cb) {
+//             cb(null, file.originalname);
+//         }
+//     })
+// }).any());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -32,6 +46,7 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', index);
+app.use('/api', server);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

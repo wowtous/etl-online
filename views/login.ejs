@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title><%= title %></title>
+        <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/login.css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <div id="login-frame" class="login-frame">
+            <div class="logo-img">
+                <img src="images/etl-logo.png" alt="" />
+            </div>
+            <form class="login-form">
+                <div class="form-login">
+                    <input type="text" class="form-control" name="username" placeholder="Email/Username">
+                </div>
+                <div class="form-login">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <div class="form-login">
+                    <input type="checkbox" name="forget">
+                    <label class="control-label">&nbsp;&nbsp;Forget Password ?</label>
+                </div>
+                <div class="form-login form-center">
+                    <div class="col-md-2"></div>
+                    <input type="button" id="login" class="btn btn-login col-md-8" name="login" value="LOGIN">
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="form-login form-center form-register">
+                    <label >Do not have an account?</label>
+                    <div class="">
+                        <a href="/regist">Create an account</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
